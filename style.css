@@ -19,3 +19,7 @@
 body, #button-container {
     display:flex;
 }
+
+body {
+    justify-content: center;
+}
