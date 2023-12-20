@@ -5,6 +5,7 @@
 #calculator-container {
     background-color:grey;
     width:40vw;
+    min-width:510px;
     height:80vh;
     padding:15px;
 }
