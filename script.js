@@ -199,22 +199,22 @@ function equalsFunction() {
     if (numberOperatorArray[1] == "+") {
         let result = addition(+numberOperatorArray[0], +numberOperatorArray[2]);
 
-        numberOperatorArray = [`${result}`]
+        numberOperatorArray = [`${Math.round(result * 100) / 100}`]
      }
      if (numberOperatorArray[1] == "-") {
          let result = substraction(+numberOperatorArray[0], +numberOperatorArray[2]);
 
-         numberOperatorArray = [`${result}`]
+         numberOperatorArray = [`${Math.round(result * 100) / 100}`]
      }
      if (numberOperatorArray[1] == "*") {
          let result = multiplication(+numberOperatorArray[0], +numberOperatorArray[2]);
 
-         numberOperatorArray = [`${result}`]
+         numberOperatorArray = [`${Math.round(result * 100) / 100}`]
      }
      if (numberOperatorArray[1] == "/") {
          let result = division(+numberOperatorArray[0], +numberOperatorArray[2]);
 
-         numberOperatorArray = [`${result}`]
+         numberOperatorArray = [`${Math.round(result * 100) / 100}`]
      }
 }
 
