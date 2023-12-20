@@ -56,3 +56,7 @@ document.addEventListener('keydown', (event) => {
         displayText.textContent = displayText.textContent.slice(0, -1);
     }
 })
+
+acBtn.addEventListener('click', () => {
+    displayText.textContent = "";
+})
