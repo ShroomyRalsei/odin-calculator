@@ -20,7 +20,7 @@
     min-width:40%;
 }
 
-body, #button-container {
+body, #calculator-container, #button-container {
     display:flex;
 }
 
@@ -31,10 +31,14 @@ body, #button-container {
 }
 
 body {
-    justify-content: center;
+    justify-content:center;
 }
 
 #button-container {
     flex-wrap:wrap;
     gap:20px;
+}
+
+#calculator-container {
+    flex-direction:column;
 }
