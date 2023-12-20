@@ -60,3 +60,12 @@ document.addEventListener('keydown', (event) => {
 acBtn.addEventListener('click', () => {
     displayText.textContent = "";
 })
+
+plusMinusBtn.addEventListener('click', () => {
+    if (displayText.textContent[0] != "-") {
+        displayText.textContent = "-" + displayText.textContent
+    }
+    else {
+        displayText.textContent = displayText.textContent.slice(1);
+    }
+})
