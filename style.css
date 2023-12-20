@@ -16,6 +16,10 @@
     border:20px solid rgba(0, 0, 0, 0.5);
 }
 
+#plus-minus, #zero {
+    width:40%;
+}
+
 body, #button-container {
     display:flex;
 }
