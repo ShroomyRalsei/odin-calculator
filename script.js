@@ -100,3 +100,32 @@ function division(num1, num2) {
 }
 
 let operator = "";
+
+function operate(operatorBtn) {
+    if(displayText.textContent == "") {
+        alert('error');
+    }
+        if(operator == "") {
+            numberOperatorArray.push(displayText.textContent);
+
+            operator = operatorBtn.textContent;
+
+            if (numberOperatorArray.length == 3) {
+                if (numberOperatorArray[1] == "+") {
+                    numberOperatorArray.splice(0, 3, addition(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                }
+                if (numberOperatorArray[1] == "-") {
+                    numberOperatorArray.splice(0, 3, substraction(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                }
+                if (numberOperatorArray[1] == "*") {
+                    numberOperatorArray.splice(0, 3, multiplication(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                }
+                if (numberOperatorArray[1] == "/") {
+                    numberOperatorArray.splice(0, 3, division(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                }
+            }
+        }
+        else {
+            operator = operatorBtn.textContent;
+        }
+}
