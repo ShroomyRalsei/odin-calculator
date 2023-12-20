@@ -37,6 +37,7 @@ body {
 #button-container {
     flex-wrap:wrap;
     gap:20px;
+    flex:1;
 }
 
 #calculator-container {
