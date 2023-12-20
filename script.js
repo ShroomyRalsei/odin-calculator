@@ -132,6 +132,22 @@ document.addEventListener('keydown', (event) => {
     else if (event.code == "Backspace") {
         displayText.textContent = displayText.textContent.slice(0, -1);
     }
+    else if (event.code == "Slash") {
+        event.preventDefault();
+        operate(slashBtn);
+    }
+    else if (event.code == "NumpadDivide") {
+        operate(slashBtn);
+    }
+    else if (event.code == "NumpadAdd") {
+        operate(plusBtn);
+    }
+    else if (event.code == "NumpadSubtract") {
+        operate(minusBtn);
+    }
+    else if (event.code == "NumpadMultiply") {
+        operate(multiplicationBtn);
+    }
 })
 
 acBtn.addEventListener('click', () => {
