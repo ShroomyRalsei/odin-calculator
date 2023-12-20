@@ -152,6 +152,7 @@ document.addEventListener('keydown', (event) => {
 
 acBtn.addEventListener('click', () => {
     displayText.textContent = "";
+    numberOperatorArray = [];
 })
 
 plusMinusBtn.addEventListener('click', () => {
