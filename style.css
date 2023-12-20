@@ -36,7 +36,7 @@ body {
 
 #button-container {
     flex-wrap:wrap;
-    gap:20px;
+    gap:10px;
     flex:1;
     padding:20px;
 }
