@@ -52,4 +52,7 @@ document.addEventListener('keydown', (event) => {
     if (event.code == "Digit0" || event.code == "Digit1" || event.code == "Digit2" || event.code == "Digit3" || event.code == "Digit4" || event.code == "Digit5" || event.code == "Digit6" || event.code == "Digit7" || event.code == "Digit8" || event.code == "Digit9") {
         addCharacter(event["key"]);
     }
+    else if (event.code == "Backspace") {
+        displayText.textContent = displayText.textContent.slice(0, -1);
+    }
 })
