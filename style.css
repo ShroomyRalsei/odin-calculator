@@ -20,6 +20,17 @@ body, #button-container {
     display:flex;
 }
 
+.btn {
+    width:20%;
+    flex-grow:1;
+    flex-shrink:0;
+}
+
 body {
     justify-content: center;
+}
+
+#button-container {
+    flex-wrap:wrap;
+    gap:20px;
 }
