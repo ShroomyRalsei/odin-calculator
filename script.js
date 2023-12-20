@@ -69,3 +69,19 @@ plusMinusBtn.addEventListener('click', () => {
         displayText.textContent = displayText.textContent.slice(1);
     }
 })
+
+function addition(num1, num2) {
+    return num1 + num2;
+} 
+
+function substraction(num1, num2) {
+    return num1 - num2;
+}
+
+function multiplication (num1, num2) {
+    return num1 * num2;
+}
+
+function division() {
+    return num1 / num2;
+}
