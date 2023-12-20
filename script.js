@@ -161,17 +161,26 @@ function operate(operatorBtn) {
 
             if (numberOperatorArray.length == 3) {
                 if (numberOperatorArray[1] == "+") {
-                    numberOperatorArray.splice(0, 3, addition(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                   let result = addition(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+                   numberOperatorArray = [`${result}`]
                 }
                 if (numberOperatorArray[1] == "-") {
-                    numberOperatorArray.splice(0, 3, substraction(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                    let result = substraction(+numberOperatorArray[0], +numberOperatorArray[2]);
+                    
+                    numberOperatorArray = [`${result}`]
                 }
                 if (numberOperatorArray[1] == "*") {
-                    numberOperatorArray.splice(0, 3, multiplication(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                    let result = multiplication(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+                    numberOperatorArray = [`${result}`]
                 }
                 if (numberOperatorArray[1] == "/") {
-                    numberOperatorArray.splice(0, 3, division(Number(numberOperatorArray[0]), Number(numberOperatorArray[2])))
+                    let result = division(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+                    numberOperatorArray = [`${result}`]
                 }
+                displayText.textContent = numberOperatorArray[0];
             }
         }
         else {
