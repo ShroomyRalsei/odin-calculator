@@ -178,7 +178,12 @@ function multiplication (num1, num2) {
 }
 
 function division(num1, num2) {
-    return num1 / num2;
+    if (num2 == 0) {
+        alert('error');
+    }
+    else {
+        return num1 / num2;
+    }
 }
 
 let operator = "";
