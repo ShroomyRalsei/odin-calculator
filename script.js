@@ -36,12 +36,61 @@ const equalsBtn = document.querySelector("#equals-btn");
 
 const displayText = document.querySelector("#display-text");
 
-const numberBtn = document.querySelectorAll(".number");
+zeroBtn.addEventListener('click', () => {
+    addCharacter(0);
+})
 
-numberBtn.forEach((numButton) => {
-    numButton.addEventListener('click', () => {
-        addCharacter(numButton.textContent);
-    })
+oneBtn.addEventListener('click', () => {
+    addCharacter(1);
+})
+
+twoBtn.addEventListener('click', () => {
+    addCharacter(2);
+})
+
+threeBtn.addEventListener('click', () => {
+    addCharacter(3);
+})
+
+fourBtn.addEventListener('click', () => {
+    addCharacter(4);
+})
+
+fiveBtn.addEventListener('click', () => {
+    addCharacter(5);
+})
+
+sixBtn.addEventListener('click', () => {
+    addCharacter(6);
+})
+
+sevenBtn.addEventListener('click', () => {
+    addCharacter(7);
+})
+
+eightBtn.addEventListener('click', () => {
+    addCharacter(8);
+})
+
+nineBtn.addEventListener('click', () => {
+    addCharacter(9);
+})
+
+
+plusBtn.addEventListener('click', () => {
+    operate(plusBtn);
+})
+
+minusBtn.addEventListener('click', () => {
+    operate(minusBtn);
+})
+
+multiplicationBtn.addEventListener('click', () => {
+    operate(multiplicationBtn);
+})
+
+slashBtn.addEventListener('click', () => {
+    operate(slashBtn);
 })
 
 function addCharacter(input) {
