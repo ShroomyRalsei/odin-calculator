@@ -38,6 +38,12 @@ const displayText = document.querySelector("#display-text");
 
 const numberBtn = document.querySelectorAll(".number");
 
+numberBtn.forEach((numButton) => {
+    numButton.addEventListener('click', () => {
+        addCharacter(numButton.textContent);
+    })
+})
+
 function addCharacter(input) {
     displayText.textContent += input;
 }
