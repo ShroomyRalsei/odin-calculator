@@ -2,7 +2,7 @@ const acBtn = document.querySelector("#ac-btn");
 
 const plusMinusBtn = document.querySelector("#plus-minus-btn");
 
-const slashBtn = document.querySelector("#slash-btn");
+/*const slashBtn = document.querySelector("#slash-btn");
 
 const sevenBtn = document.querySelector("#seven-btn");
 
@@ -28,7 +28,7 @@ const threeBtn = document.querySelector("#three-btn");
 
 const plusBtn = document.querySelector("#plus-btn");
 
-const zeroBtn = document.querySelector("#zero-btn");
+const zeroBtn = document.querySelector("#zero-btn");*/
 
 const decimalBtn = document.querySelector("#decimal-btn");
 
