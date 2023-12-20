@@ -28,6 +28,7 @@ body, #calculator-container, #button-container {
     width:20%;
     flex-grow:1;
     flex-shrink:0;
+    font-size:2rem;
 }
 
 body {
