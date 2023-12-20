@@ -150,6 +150,29 @@ function division(num1, num2) {
 
 let operator = "";
 
+function equalsFunction() {
+    if (numberOperatorArray[1] == "+") {
+        let result = addition(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+        numberOperatorArray = [`${result}`]
+     }
+     if (numberOperatorArray[1] == "-") {
+         let result = substraction(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+         numberOperatorArray = [`${result}`]
+     }
+     if (numberOperatorArray[1] == "*") {
+         let result = multiplication(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+         numberOperatorArray = [`${result}`]
+     }
+     if (numberOperatorArray[1] == "/") {
+         let result = division(+numberOperatorArray[0], +numberOperatorArray[2]);
+
+         numberOperatorArray = [`${result}`]
+     }
+}
+
 function operate(operatorBtn) {
     if(displayText.textContent == "") {
         alert('error');
@@ -160,26 +183,7 @@ function operate(operatorBtn) {
             operator = operatorBtn.textContent;
 
             if (numberOperatorArray.length == 3) {
-                if (numberOperatorArray[1] == "+") {
-                   let result = addition(+numberOperatorArray[0], +numberOperatorArray[2]);
-
-                   numberOperatorArray = [`${result}`]
-                }
-                if (numberOperatorArray[1] == "-") {
-                    let result = substraction(+numberOperatorArray[0], +numberOperatorArray[2]);
-                    
-                    numberOperatorArray = [`${result}`]
-                }
-                if (numberOperatorArray[1] == "*") {
-                    let result = multiplication(+numberOperatorArray[0], +numberOperatorArray[2]);
-
-                    numberOperatorArray = [`${result}`]
-                }
-                if (numberOperatorArray[1] == "/") {
-                    let result = division(+numberOperatorArray[0], +numberOperatorArray[2]);
-
-                    numberOperatorArray = [`${result}`]
-                }
+                equalsFunction();
                 displayText.textContent = numberOperatorArray[0];
             }
         }
