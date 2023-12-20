@@ -150,6 +150,18 @@ function division(num1, num2) {
 
 let operator = "";
 
+equalsBtn.addEventListener('click', () => {
+    if(numberOperatorArray.length >= 2 && operator == "") {
+        numberOperatorArray.push(displayText.textContent);
+        equalsFunction();
+        displayText.textContent = numberOperatorArray[0];
+        numberOperatorArray = [];
+    }
+    else {
+        alert('oopsie');
+    }
+})
+
 function equalsFunction() {
     if (numberOperatorArray[1] == "+") {
         let result = addition(+numberOperatorArray[0], +numberOperatorArray[2]);
