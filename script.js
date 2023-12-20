@@ -37,3 +37,7 @@ const equalsBtn = document.querySelector("#equals-btn");
 const displayText = document.querySelector("#display-text");
 
 const numberBtn = document.querySelectorAll(".number");
+
+function addCharacter(input) {
+    displayText.textContent += input;
+}
