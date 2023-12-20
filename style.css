@@ -20,7 +20,7 @@
     min-width:40%;
 }
 
-body, #calculator-container, #button-container {
+body, #calculator-container, #button-container, #display-container {
     display:flex;
 }
 
