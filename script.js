@@ -74,6 +74,8 @@ function addition(num1, num2) {
     return num1 + num2;
 } 
 
+const numberOperatorArray = [];
+
 function substraction(num1, num2) {
     return num1 - num2;
 }
@@ -85,3 +87,5 @@ function multiplication (num1, num2) {
 function division(num1, num2) {
     return num1 / num2;
 }
+
+let operator = "";
