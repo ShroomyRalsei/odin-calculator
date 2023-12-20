@@ -45,7 +45,18 @@ numberBtn.forEach((numButton) => {
 })
 
 function addCharacter(input) {
-    displayText.textContent += input;
+    if(operator == "") {
+        displayText.textContent += input;
+    }
+    else if (operator != "" && displayText.textContent != "") {
+        numberOperatorArray.push(operator);
+
+        displayText.textContent = "";
+
+        operator = "";
+
+        displayText.textContent += input;
+    }
 }
 
 document.addEventListener('keydown', (event) => {
