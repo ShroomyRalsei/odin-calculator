@@ -134,7 +134,7 @@ function addition(num1, num2) {
     return num1 + num2;
 } 
 
-const numberOperatorArray = [];
+let numberOperatorArray = [];
 
 function substraction(num1, num2) {
     return num1 - num2;
