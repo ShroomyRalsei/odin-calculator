@@ -179,10 +179,12 @@ function multiplication (num1, num2) {
 }
 
 function division(num1, num2) {
-    if (num2 == 0) {
-        alert('error');
+    if (num2 != 0) {
+        return num1 / num2;
     }
     else {
+        alert("GRRRR stop dividing by 0");
+        num2 += 1;
         return num1 / num2;
     }
 }
